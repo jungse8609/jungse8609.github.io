@@ -40,7 +40,7 @@
     </ul>
   </nav>
 
-  <div class="sidebar-bottom d-flex flex-wrap  align-items-center w-100">
+  <div class="sidebar-bottom d-flex flex-wrap  align-items-center w-100 gap-1">
     {% unless site.theme_mode %}
       <button type="button" class="btn btn-link nav-link" aria-label="Switch Mode" id="mode-toggle">
         <i class="fas fa-adjust"></i>
@@ -51,19 +51,23 @@
       {% endif %}
     {% endunless %}
 
-    {% for entry in site.data.contact %}
+    <span class="icon-border"></span>
+
+    {% for entry in site.data.origin.contact %}
       {% case entry.type %}
-        {% when 'github', 'twitter' %}
+        {% when 'github' %}
           {%- capture url -%}
             https://github.com/jungse8609{{ site[github].jungse8609 }}
+          {%- endcapture -%}
+        {% when 'instagram' %}
+          {%- capture url -%}
+            https://www.instagram.com/kukkyueng{{ site[instagram].kukkyueng }}
           {%- endcapture -%}
         {% when 'email' %}
           {% assign email = site.social.email | split: '@' %}
           {%- capture url -%}
             javascript:location.href = 'mailto:' + ['{{ email[0] }}','{{ email[1] }}'].join('@')
           {%- endcapture -%}
-        {% when 'rss' %}
-          {% assign url = '/feed.xml' | relative_url %}
         {% else %}
           {% assign url = entry.url %}
       {% endcase %}
