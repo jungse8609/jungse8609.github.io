@@ -35,5 +35,5 @@ def rename_images_in_markdown(md_file_path: str, post_name: str):
 
 if __name__ == "__main__":
 
-    filename = "2025-03-16-computer_vision02"
+    filename = "2025-03-12-making_blog06"
     rename_images_in_markdown("_posts/" + filename + ".md", filename)
