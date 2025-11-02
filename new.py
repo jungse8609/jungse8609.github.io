@@ -17,7 +17,8 @@ def create_new_post():
     filename_date = now.strftime('%Y-%m-%d') # 파일명에 사용할 날짜
 
     # 2. 사용자 입력 받기
-    # ❌ [제거] 파일명(slug)을 묻는 input이 제거되었습니다.
+    post_slug = input("📝 파일명(slug)을 입력하세요 (예: my-first-post): ")
+    title_input = input("🏷️ 제목을 입력하세요 (예: 첫 포스트): ")
     categories_input = input("🗂️ 카테고리를 입력하세요 (쉼표(,)로 구분, 예: Blog, Python): ")
 
     # 3. 카테고리 및 태그 처리
@@ -35,25 +36,25 @@ def create_new_post():
         categories_str = "[...]"
         tags_str = "[...]"
 
-    # ⭐️ [신규] 파일명(slug)을 첫 번째 카테고리에서 파생
-    if categories_list and categories_list[0]:
-        # 첫 번째 카테고리를 가져옴 (예: "Blog")
-        post_slug = categories_list[0]
-        
-        # 1. 소문자로 변경 (예: "blog")
+    # slug 후처리
+    if post_slug:
+        # 1. 소문자로 변경
         post_slug = post_slug.lower()
-        # 2. 공백을 하이픈으로 변경 (예: "Dev Blog" -> "dev-blog")
+        # 2. 공백을 하이픈으로 변경
         post_slug = post_slug.replace(' ', '-')
         # 3. (안전장치) 알파벳, 숫자, 하이픈 외의 특수문자 모두 제거
         post_slug = re.sub(r'[^\w\-]', '', post_slug)
     else:
-        # 카테고리를 입력하지 않은 경우 기본값 사용
-        post_slug = "post" 
-        print("⚠️ 카테고리가 입력되지 않아 기본 파일명 'post'를 사용합니다.")
+        # 입력이 없는 경우 기본값 사용
+        post_slug = "post"
+        print("⚠️ 파일명이 입력되지 않아 기본 파일명 'post'를 사용합니다.")
 
-
-    # 4. 요청된 title (하드코딩)
-    title_str = '"[] "'
+    # 4. 제목 처리
+    if title_input:
+        title_str = f'"{title_input}"'
+    else:
+        title_str = '"[] "'
+        print("⚠️ 제목이 입력되지 않아 기본 제목 '[] '을 사용합니다.")
 
     # 5. 최종 템플릿 조합
     template = f"""---
