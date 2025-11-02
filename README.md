@@ -1,3 +1,16 @@
+# 자동화 스크립트
+
+- hide.py: 2달 이상 지난 포스트들은 감춘다.
+    - settings.json 업데이트
+    - `_posts/`, `assets/img/_posts/` 경로 파일들 감춤
+- trim.py: 노션에서 복사/붙여넣기한 텍스트의 이미지 경로를 수정한다.
+    - 노션에서 복사한 이미지 경로 텍스트는 [!image](KEY Value) 이다.
+    - ![image.png](../assets/img/posts/20xx-xx-xx-title/image (index).png)로 수정한다.
+- new.py: 새로운 포스트를 작성한다.
+    - Input 1. 파일명: (오늘 일자)-(파일명).md로 생성한다.
+    - Input 2. 제목: 포스트 제목
+    - Input 3. 카테고리: 카테고리를 작성하고 태그에 자동으로 카테고리를 소문자로 넣는다.
+
 # Chirpy Starter
 
 [![Gem Version](https://img.shields.io/gem/v/jekyll-theme-chirpy)][gem]&nbsp;

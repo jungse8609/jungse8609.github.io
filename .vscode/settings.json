@@ -1,30 +1,31 @@
 {
-  // Prettier
-  "editor.defaultFormatter": "esbenp.prettier-vscode",
-  "editor.formatOnSave": true,
-  // Shopify Liquid
-  "files.associations": {
-    "*.html": "html"
-  },
-  "[markdown]": {
-    "editor.defaultFormatter": "yzhang.markdown-all-in-one"
-  },
-  // Formatter
-  "[html][liquid]": {
-    "editor.defaultFormatter": "Shopify.theme-check-vscode"
-  },
-  "[shellscript]": {
-    "editor.defaultFormatter": "mkhl.shfmt"
-  },
-  // Disable vscode built-in stylelint
-  "css.validate": false,
-  "scss.validate": false,
-  "less.validate": false,
-  // Stylint extension settings
-  "stylelint.snippet": ["css", "scss"],
-  "stylelint.validate": ["css", "scss"],
-  // Run tasks in macOS
-  "terminal.integrated.profiles.osx": {
-    "zsh": { "path": "/bin/zsh", "args": ["-l", "-i"] }
+  "files.exclude": {
+    "_posts/2025-03-07-making_blog00.md": true,
+    "_posts/2025-03-07-making_blog01.md": true,
+    "_posts/2025-03-07-making_blog02.md": true,
+    "_posts/2025-03-08-making_blog03.md": true,
+    "_posts/2025-03-09-rename_image_md.md": true,
+    "_posts/2025-03-09-review_25_3_1.md": true,
+    "_posts/2025-03-09-sitemap_and_robots.md": true,
+    "_posts/2025-03-10-making_blog04.md": true,
+    "_posts/2025-03-10-making_blog05.md": true,
+    "_posts/2025-03-12-making_blog06.md": true,
+    "_posts/2025-03-16-computer_vision02.md": true,
+    "_posts/2025-03-16-review_25_3_2.md": true,
+    "_posts/2025-03-23-review_25_3_3.md": true,
+    "_posts/2025-03-30-review_25_3_4.md": true,
+    "_posts/2025-04-28-review_25_4_28.md": true,
+    "assets/img/posts/2025-03-07-making_blog01": true,
+    "assets/img/posts/2025-03-07-making_blog02": true,
+    "assets/img/posts/2025-03-08-making_blog03": true,
+    "assets/img/posts/2025-03-09-review_25_3_1": true,
+    "assets/img/posts/2025-03-09-sitemap_and_robots": true,
+    "assets/img/posts/2025-03-10-making_blog04": true,
+    "assets/img/posts/2025-03-10-making_blog05": true,
+    "assets/img/posts/2025-03-12-making_blog06": true,
+    "assets/img/posts/2025-03-16-computer_vision02": true,
+    "assets/img/posts/2025-03-16-review_25_3_2": true,
+    "assets/img/posts/2025-03-23-review_25_3_3": true,
+    "assets/img/posts/2025-03-30-review_25_3_4": true
   }
 }
