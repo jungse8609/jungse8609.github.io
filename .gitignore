@@ -25,3 +25,11 @@ package-lock.json
 # Misc
 _sass/vendors
 assets/js/dist
+
+# AI
+.claude/
+.gemini/
+
+# 노션 export 임시 인입함 (실제 export는 무시, README만 추적)
+_notion_inbox/*
+!_notion_inbox/README.md
