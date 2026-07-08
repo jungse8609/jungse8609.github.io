@@ -21,7 +21,7 @@ tags: [hackathon]
 
 ### 오티/발대식
 
-![](../assets/img/posts/2026-07-08-hackathon/image.jpg)
+![image.jpg](../assets/img/posts/2026-07-08-hackathon/image.jpg)
 
 오티한다고 서울 갔다옴. 넥슨이여도 기차비는 안 주네. 후.. 그래도 넥슨이 부르면 가긴 해야지.
 가서 뭐 아이스 브레이킹하고 원페이지 기획서도 작성해보고 했다.
@@ -43,7 +43,7 @@ tags: [hackathon]
 
 ### 메커톤!
 
-![](../assets/img/posts/2026-07-08-hackathon/image 1.jpg)
+![image 1.jpg](../assets/img/posts/2026-07-08-hackathon/image 1.jpg)
 
 드디어 대망의 메커톤! 10일이라는 짧은 시간 동안 나름 알차게 개발했고 "이 정도면 우리도 상 받나...?" 라는 기대를 해봄.
 하지만 기대는 안 하는게 좋으니까 내가 팀원들한테 "절~~~~~대 기대하면 안 돼요잉?! 꿀팁입니다잉?!" 이라고 말해줌. 역시 좋은 팀장이야 나는.
@@ -80,11 +80,11 @@ tags: [hackathon]
 
 뒤에 상금 수령 관련 문서 제출하고 인터뷰 따고 우리는 부산 가는 기차가 곧이라 바로 택시 타고 출발함
 
-![](../assets/img/posts/2026-07-08-hackathon/image 2.jpg)
+![image 2.jpg](../assets/img/posts/2026-07-08-hackathon/image 2.jpg)
 
 ### 후기
 
-![](../assets/img/posts/2026-07-08-hackathon/image 3.jpg)
+![image 3.jpg](../assets/img/posts/2026-07-08-hackathon/image 3.jpg)
 
 이번에는 지금까지 안 해봤던 경험이였다. 
 
