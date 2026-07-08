@@ -199,6 +199,7 @@ exclude:
   - tools
   - README.md
   - LICENSE
+  - CLAUDE.md
   - purgecss.js
   - rollup.config.js
   - "package*.json"
